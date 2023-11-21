@@ -1,0 +1,2 @@
+ls: cannot access './ciao.txt': No such file or directory
+no

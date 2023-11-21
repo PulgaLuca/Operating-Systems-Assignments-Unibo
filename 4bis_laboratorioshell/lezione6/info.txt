@@ -1,0 +1,2 @@
+Lezione 6 parte 3 in laboratorio
+usare moduli, man, gcc, Makefile
