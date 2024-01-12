@@ -1,0 +1,27 @@
+Nella directory "radice" ci sono due sottodirectory d1 ed d2.
+La sottodirectory d2 inizialmente e' vuota.
+Nella sottodirectory d1 c'e' un file m1.c ed un Makefile.
+Il file d1.c contiene codice C che stampa a video la stringa "ciao 1".
+Il file d1.c viene compilato e linkato dal Makefile.
+
+Scrivere uno script  duplica.sh, mettendolo nella directory "radice".
+Lo script duplica.sh deve fare le seguenti cose:
+
+- mette nella directory d2 una copia modificata dei file d1.c e Makefile
+  chiamandoli d2.c e Makefile2.
+- Il file d2.c deve essere stato modificato dallo script duplica.sh
+  per fargli stampare la stringa "ciao 2" invece che "ciao 1".
+  Nota Bene: nel file d1.c c'e' una sola stringa "ciao 1". 
+- Il Makefile2 deve essere stato modificato dallo script per compilare
+  e linkare il file d2.c creando d2.exe invece che compilare d1.c e creare m1.exe.
+  Nota Bene: guardare come e' fatto Makefile per capire che modifiche fare.
+
+- Poi, lo script duplica.sh deve lanciare la compilazione
+prima in d1 e poi in d2.
+
+- Infine, lo script duplica deve lanciare gli eseguibili m1.exe ed m2.exe
+
+
+
+Suggerimento per la modifica: il comando sed puo' essere molto utile. 
+

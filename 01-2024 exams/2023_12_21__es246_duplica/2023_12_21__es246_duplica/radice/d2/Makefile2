@@ -1,0 +1,16 @@
+CFLAGS=-ansi -Wpedantic -Wall
+
+all: 	 m2.exe
+
+m2.exe:  m2.o
+	gcc -o m2.exe m2.o
+
+m2.o: m2.c
+	gcc -c ${CFLAGS} m2.c 
+
+.PHONY:	clean
+
+clean:
+	-rm -f m2.o m2.exe
+
+
